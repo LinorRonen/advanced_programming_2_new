@@ -1,0 +1,471 @@
+desc: --heap=yes --stacks=no
+cmd: ./primeCounterThreads
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=179677
+mem_heap_B=272
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=180542
+mem_heap_B=544
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=181383
+mem_heap_B=816
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=182224
+mem_heap_B=1088
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=183443
+mem_heap_B=5184
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=65528541240
+mem_heap_B=5220
+mem_heap_extra_B=60
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=65528541824
+mem_heap_B=6426
+mem_heap_extra_B=78
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=65528541981
+mem_heap_B=6462
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=65528546023
+mem_heap_B=6518
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=detailed
+n4: 6518 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x48DFBA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48EECDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48EDCDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48EED95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x48C40CF: __vfscanf_internal (vfscanf-internal.c:628)
+      n1: 4096 0x48C3141: __isoc99_scanf (isoc99_scanf.c:30)
+       n1: 4096 0x1093BC: calculate_primes (in /home/linor/Desktop/newAP2/primeCounterThreads)
+        n1: 4096 0x48F5AC2: start_thread (pthread_create.c:442)
+         n0: 4096 0x4986A03: clone (clone.S:100)
+ n1: 1206 0x400DA02: calloc (rtld-malloc.h:44)
+  n1: 1206 0x400DA02: _dl_new_object (dl-object.c:92)
+   n1: 1206 0x4008C82: _dl_map_object_from_fd (dl-load.c:1063)
+    n1: 1206 0x400A600: _dl_map_object (dl-load.c:2327)
+     n1: 1206 0x400E9A8: dl_open_worker_begin (dl-open.c:534)
+      n1: 1206 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+       n1: 1206 0x400DF99: dl_open_worker (dl-open.c:782)
+        n1: 1206 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+         n1: 1206 0x400E34D: _dl_open (dl-open.c:883)
+          n1: 1206 0x49D5E00: do_dlopen (dl-libc.c:95)
+           n1: 1206 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+            n1: 1206 0x49D5B62: _dl_catch_error (dl-error-skeleton.c:227)
+             n1: 1206 0x49D5F36: dlerror_run (dl-libc.c:45)
+              n1: 1206 0x49D5F36: __libc_dlopen_mode (dl-libc.c:162)
+               n1: 1206 0x4986610: __libc_unwind_link_get (unwind-link.c:50)
+                n1: 1206 0x4986610: __libc_unwind_link_get (unwind-link.c:40)
+                 n1: 1206 0x48F6C8C: pthread_exit (pthread_exit.c:28)
+                  n1: 1206 0x109441: calculate_primes (in /home/linor/Desktop/newAP2/primeCounterThreads)
+                   n1: 1206 0x48F5AC2: start_thread (pthread_create.c:442)
+                    n0: 1206 0x4986A03: clone (clone.S:100)
+ n1: 1088 0x40147D9: calloc (rtld-malloc.h:44)
+  n1: 1088 0x40147D9: allocate_dtv (dl-tls.c:375)
+   n1: 1088 0x40147D9: _dl_allocate_tls (dl-tls.c:634)
+    n1: 1088 0x48F67B4: allocate_stack (allocatestack.c:430)
+     n1: 1088 0x48F67B4: pthread_create@@GLIBC_2.34 (pthread_create.c:647)
+      n0: 1088 0x1094EA: main (in /home/linor/Desktop/newAP2/primeCounterThreads)
+ n0: 128 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=65528547966
+mem_heap_B=6974
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=65528597103
+mem_heap_B=6982
+mem_heap_extra_B=146
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=65528597183
+mem_heap_B=9286
+mem_heap_extra_B=154
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=65528597348
+mem_heap_B=9286
+mem_heap_extra_B=154
+mem_stacks_B=0
+heap_tree=detailed
+n6: 9286 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x48DFBA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x48EECDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48EDCDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48EED95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x48C40CF: __vfscanf_internal (vfscanf-internal.c:628)
+      n1: 4096 0x48C3141: __isoc99_scanf (isoc99_scanf.c:30)
+       n1: 4096 0x1093BC: calculate_primes (in /home/linor/Desktop/newAP2/primeCounterThreads)
+        n1: 4096 0x48F5AC2: start_thread (pthread_create.c:442)
+         n0: 4096 0x4986A03: clone (clone.S:100)
+ n1: 2304 0x4005D97: malloc (rtld-malloc.h:56)
+  n1: 2304 0x4005D97: _dlfo_mappings_segment_allocate (dl-find_object.c:217)
+   n1: 2304 0x4005D97: _dl_find_object_update_1 (dl-find_object.c:671)
+    n1: 2304 0x4005D97: _dl_find_object_update (dl-find_object.c:804)
+     n1: 2304 0x400ECCF: dl_open_worker_begin (dl-open.c:735)
+      n1: 2304 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+       n1: 2304 0x400DF99: dl_open_worker (dl-open.c:782)
+        n1: 2304 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+         n1: 2304 0x400E34D: _dl_open (dl-open.c:883)
+          n1: 2304 0x49D5E00: do_dlopen (dl-libc.c:95)
+           n1: 2304 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+            n1: 2304 0x49D5B62: _dl_catch_error (dl-error-skeleton.c:227)
+             n1: 2304 0x49D5F36: dlerror_run (dl-libc.c:45)
+              n1: 2304 0x49D5F36: __libc_dlopen_mode (dl-libc.c:162)
+               n1: 2304 0x4986610: __libc_unwind_link_get (unwind-link.c:50)
+                n1: 2304 0x4986610: __libc_unwind_link_get (unwind-link.c:40)
+                 n1: 2304 0x48F6C8C: pthread_exit (pthread_exit.c:28)
+                  n1: 2304 0x109441: calculate_primes (in /home/linor/Desktop/newAP2/primeCounterThreads)
+                   n1: 2304 0x48F5AC2: start_thread (pthread_create.c:442)
+                    n0: 2304 0x4986A03: clone (clone.S:100)
+ n1: 1206 0x400DA02: calloc (rtld-malloc.h:44)
+  n1: 1206 0x400DA02: _dl_new_object (dl-object.c:92)
+   n1: 1206 0x4008C82: _dl_map_object_from_fd (dl-load.c:1063)
+    n1: 1206 0x400A600: _dl_map_object (dl-load.c:2327)
+     n1: 1206 0x400E9A8: dl_open_worker_begin (dl-open.c:534)
+      n1: 1206 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+       n1: 1206 0x400DF99: dl_open_worker (dl-open.c:782)
+        n1: 1206 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+         n1: 1206 0x400E34D: _dl_open (dl-open.c:883)
+          n1: 1206 0x49D5E00: do_dlopen (dl-libc.c:95)
+           n1: 1206 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+            n1: 1206 0x49D5B62: _dl_catch_error (dl-error-skeleton.c:227)
+             n1: 1206 0x49D5F36: dlerror_run (dl-libc.c:45)
+              n1: 1206 0x49D5F36: __libc_dlopen_mode (dl-libc.c:162)
+               n1: 1206 0x4986610: __libc_unwind_link_get (unwind-link.c:50)
+                n1: 1206 0x4986610: __libc_unwind_link_get (unwind-link.c:40)
+                 n1: 1206 0x48F6C8C: pthread_exit (pthread_exit.c:28)
+                  n1: 1206 0x109441: calculate_primes (in /home/linor/Desktop/newAP2/primeCounterThreads)
+                   n1: 1206 0x48F5AC2: start_thread (pthread_create.c:442)
+                    n0: 1206 0x4986A03: clone (clone.S:100)
+ n1: 1088 0x40147D9: calloc (rtld-malloc.h:44)
+  n1: 1088 0x40147D9: allocate_dtv (dl-tls.c:375)
+   n1: 1088 0x40147D9: _dl_allocate_tls (dl-tls.c:634)
+    n1: 1088 0x48F67B4: allocate_stack (allocatestack.c:430)
+     n1: 1088 0x48F67B4: pthread_create@@GLIBC_2.34 (pthread_create.c:647)
+      n0: 1088 0x1094EA: main (in /home/linor/Desktop/newAP2/primeCounterThreads)
+ n1: 456 0x40162DC: calloc (rtld-malloc.h:44)
+  n1: 456 0x40162DC: _dl_check_map_versions (dl-version.c:273)
+   n1: 456 0x400ED13: dl_open_worker_begin (dl-open.c:600)
+    n1: 456 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+     n1: 456 0x400DF99: dl_open_worker (dl-open.c:782)
+      n1: 456 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+       n1: 456 0x400E34D: _dl_open (dl-open.c:883)
+        n1: 456 0x49D5E00: do_dlopen (dl-libc.c:95)
+         n1: 456 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+          n1: 456 0x49D5B62: _dl_catch_error (dl-error-skeleton.c:227)
+           n1: 456 0x49D5F36: dlerror_run (dl-libc.c:45)
+            n1: 456 0x49D5F36: __libc_dlopen_mode (dl-libc.c:162)
+             n1: 456 0x4986610: __libc_unwind_link_get (unwind-link.c:50)
+              n1: 456 0x4986610: __libc_unwind_link_get (unwind-link.c:40)
+               n1: 456 0x48F6C8C: pthread_exit (pthread_exit.c:28)
+                n1: 456 0x109441: calculate_primes (in /home/linor/Desktop/newAP2/primeCounterThreads)
+                 n1: 456 0x48F5AC2: start_thread (pthread_create.c:442)
+                  n0: 456 0x4986A03: clone (clone.S:100)
+ n0: 136 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=65528597348
+mem_heap_B=9278
+mem_heap_extra_B=138
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=65528637204
+mem_heap_B=10302
+mem_heap_extra_B=146
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=65528640990
+mem_heap_B=10302
+mem_heap_extra_B=146
+mem_stacks_B=0
+heap_tree=peak
+n6: 10302 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x48DFBA3: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x48EECDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48EDCDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48EED95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x48C40CF: __vfscanf_internal (vfscanf-internal.c:628)
+      n1: 4096 0x48C3141: __isoc99_scanf (isoc99_scanf.c:30)
+       n1: 4096 0x1093BC: calculate_primes (in /home/linor/Desktop/newAP2/primeCounterThreads)
+        n1: 4096 0x48F5AC2: start_thread (pthread_create.c:442)
+         n0: 4096 0x4986A03: clone (clone.S:100)
+   n1: 1024 0x48EDF5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EC6D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48EC6D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48D6CA8: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48D6CA8: __vfprintf_internal (vfprintf-internal.c:1516)
+        n1: 1024 0x48C179E: printf (printf.c:33)
+         n0: 1024 0x109566: main (in /home/linor/Desktop/newAP2/primeCounterThreads)
+ n1: 2304 0x4005D97: malloc (rtld-malloc.h:56)
+  n1: 2304 0x4005D97: _dlfo_mappings_segment_allocate (dl-find_object.c:217)
+   n1: 2304 0x4005D97: _dl_find_object_update_1 (dl-find_object.c:671)
+    n1: 2304 0x4005D97: _dl_find_object_update (dl-find_object.c:804)
+     n1: 2304 0x400ECCF: dl_open_worker_begin (dl-open.c:735)
+      n1: 2304 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+       n1: 2304 0x400DF99: dl_open_worker (dl-open.c:782)
+        n1: 2304 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+         n1: 2304 0x400E34D: _dl_open (dl-open.c:883)
+          n1: 2304 0x49D5E00: do_dlopen (dl-libc.c:95)
+           n1: 2304 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+            n1: 2304 0x49D5B62: _dl_catch_error (dl-error-skeleton.c:227)
+             n1: 2304 0x49D5F36: dlerror_run (dl-libc.c:45)
+              n1: 2304 0x49D5F36: __libc_dlopen_mode (dl-libc.c:162)
+               n1: 2304 0x4986610: __libc_unwind_link_get (unwind-link.c:50)
+                n1: 2304 0x4986610: __libc_unwind_link_get (unwind-link.c:40)
+                 n1: 2304 0x48F6C8C: pthread_exit (pthread_exit.c:28)
+                  n1: 2304 0x109441: calculate_primes (in /home/linor/Desktop/newAP2/primeCounterThreads)
+                   n1: 2304 0x48F5AC2: start_thread (pthread_create.c:442)
+                    n0: 2304 0x4986A03: clone (clone.S:100)
+ n1: 1206 0x400DA02: calloc (rtld-malloc.h:44)
+  n1: 1206 0x400DA02: _dl_new_object (dl-object.c:92)
+   n1: 1206 0x4008C82: _dl_map_object_from_fd (dl-load.c:1063)
+    n1: 1206 0x400A600: _dl_map_object (dl-load.c:2327)
+     n1: 1206 0x400E9A8: dl_open_worker_begin (dl-open.c:534)
+      n1: 1206 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+       n1: 1206 0x400DF99: dl_open_worker (dl-open.c:782)
+        n1: 1206 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+         n1: 1206 0x400E34D: _dl_open (dl-open.c:883)
+          n1: 1206 0x49D5E00: do_dlopen (dl-libc.c:95)
+           n1: 1206 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+            n1: 1206 0x49D5B62: _dl_catch_error (dl-error-skeleton.c:227)
+             n1: 1206 0x49D5F36: dlerror_run (dl-libc.c:45)
+              n1: 1206 0x49D5F36: __libc_dlopen_mode (dl-libc.c:162)
+               n1: 1206 0x4986610: __libc_unwind_link_get (unwind-link.c:50)
+                n1: 1206 0x4986610: __libc_unwind_link_get (unwind-link.c:40)
+                 n1: 1206 0x48F6C8C: pthread_exit (pthread_exit.c:28)
+                  n1: 1206 0x109441: calculate_primes (in /home/linor/Desktop/newAP2/primeCounterThreads)
+                   n1: 1206 0x48F5AC2: start_thread (pthread_create.c:442)
+                    n0: 1206 0x4986A03: clone (clone.S:100)
+ n1: 1088 0x40147D9: calloc (rtld-malloc.h:44)
+  n1: 1088 0x40147D9: allocate_dtv (dl-tls.c:375)
+   n1: 1088 0x40147D9: _dl_allocate_tls (dl-tls.c:634)
+    n1: 1088 0x48F67B4: allocate_stack (allocatestack.c:430)
+     n1: 1088 0x48F67B4: pthread_create@@GLIBC_2.34 (pthread_create.c:647)
+      n0: 1088 0x1094EA: main (in /home/linor/Desktop/newAP2/primeCounterThreads)
+ n1: 456 0x40162DC: calloc (rtld-malloc.h:44)
+  n1: 456 0x40162DC: _dl_check_map_versions (dl-version.c:273)
+   n1: 456 0x400ED13: dl_open_worker_begin (dl-open.c:600)
+    n1: 456 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+     n1: 456 0x400DF99: dl_open_worker (dl-open.c:782)
+      n1: 456 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+       n1: 456 0x400E34D: _dl_open (dl-open.c:883)
+        n1: 456 0x49D5E00: do_dlopen (dl-libc.c:95)
+         n1: 456 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+          n1: 456 0x49D5B62: _dl_catch_error (dl-error-skeleton.c:227)
+           n1: 456 0x49D5F36: dlerror_run (dl-libc.c:45)
+            n1: 456 0x49D5F36: __libc_dlopen_mode (dl-libc.c:162)
+             n1: 456 0x4986610: __libc_unwind_link_get (unwind-link.c:50)
+              n1: 456 0x4986610: __libc_unwind_link_get (unwind-link.c:40)
+               n1: 456 0x48F6C8C: pthread_exit (pthread_exit.c:28)
+                n1: 456 0x109441: calculate_primes (in /home/linor/Desktop/newAP2/primeCounterThreads)
+                 n1: 456 0x48F5AC2: start_thread (pthread_create.c:442)
+                  n0: 456 0x4986A03: clone (clone.S:100)
+ n0: 128 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=17
+#-----------
+time=65528640990
+mem_heap_B=6206
+mem_heap_extra_B=138
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=65528641024
+mem_heap_B=5182
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=65528642013
+mem_heap_B=5126
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=65528643350
+mem_heap_B=4854
+mem_heap_extra_B=106
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=65528643751
+mem_heap_B=4582
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=65528644152
+mem_heap_B=4310
+mem_heap_extra_B=90
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=65528644553
+mem_heap_B=4038
+mem_heap_extra_B=82
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=65528645714
+mem_heap_B=3582
+mem_heap_extra_B=66
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=65528645744
+mem_heap_B=3546
+mem_heap_extra_B=46
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=65528645790
+mem_heap_B=3510
+mem_heap_extra_B=26
+mem_stacks_B=0
+heap_tree=detailed
+n3: 3510 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2304 0x4005D97: malloc (rtld-malloc.h:56)
+  n1: 2304 0x4005D97: _dlfo_mappings_segment_allocate (dl-find_object.c:217)
+   n1: 2304 0x4005D97: _dl_find_object_update_1 (dl-find_object.c:671)
+    n1: 2304 0x4005D97: _dl_find_object_update (dl-find_object.c:804)
+     n1: 2304 0x400ECCF: dl_open_worker_begin (dl-open.c:735)
+      n1: 2304 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+       n1: 2304 0x400DF99: dl_open_worker (dl-open.c:782)
+        n1: 2304 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+         n1: 2304 0x400E34D: _dl_open (dl-open.c:883)
+          n1: 2304 0x49D5E00: do_dlopen (dl-libc.c:95)
+           n1: 2304 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+            n1: 2304 0x49D5B62: _dl_catch_error (dl-error-skeleton.c:227)
+             n1: 2304 0x49D5F36: dlerror_run (dl-libc.c:45)
+              n1: 2304 0x49D5F36: __libc_dlopen_mode (dl-libc.c:162)
+               n1: 2304 0x4986610: __libc_unwind_link_get (unwind-link.c:50)
+                n1: 2304 0x4986610: __libc_unwind_link_get (unwind-link.c:40)
+                 n1: 2304 0x48F6C8C: pthread_exit (pthread_exit.c:28)
+                  n1: 2304 0x109441: calculate_primes (in /home/linor/Desktop/newAP2/primeCounterThreads)
+                   n1: 2304 0x48F5AC2: start_thread (pthread_create.c:442)
+                    n0: 2304 0x4986A03: clone (clone.S:100)
+ n1: 1206 0x400DA02: calloc (rtld-malloc.h:44)
+  n1: 1206 0x400DA02: _dl_new_object (dl-object.c:92)
+   n1: 1206 0x4008C82: _dl_map_object_from_fd (dl-load.c:1063)
+    n1: 1206 0x400A600: _dl_map_object (dl-load.c:2327)
+     n1: 1206 0x400E9A8: dl_open_worker_begin (dl-open.c:534)
+      n1: 1206 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+       n1: 1206 0x400DF99: dl_open_worker (dl-open.c:782)
+        n1: 1206 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+         n1: 1206 0x400E34D: _dl_open (dl-open.c:883)
+          n1: 1206 0x49D5E00: do_dlopen (dl-libc.c:95)
+           n1: 1206 0x49D5A97: _dl_catch_exception (dl-error-skeleton.c:208)
+            n1: 1206 0x49D5B62: _dl_catch_error (dl-error-skeleton.c:227)
+             n1: 1206 0x49D5F36: dlerror_run (dl-libc.c:45)
+              n1: 1206 0x49D5F36: __libc_dlopen_mode (dl-libc.c:162)
+               n1: 1206 0x4986610: __libc_unwind_link_get (unwind-link.c:50)
+                n1: 1206 0x4986610: __libc_unwind_link_get (unwind-link.c:40)
+                 n1: 1206 0x48F6C8C: pthread_exit (pthread_exit.c:28)
+                  n1: 1206 0x109441: calculate_primes (in /home/linor/Desktop/newAP2/primeCounterThreads)
+                   n1: 1206 0x48F5AC2: start_thread (pthread_create.c:442)
+                    n0: 1206 0x4986A03: clone (clone.S:100)
+ n0: 0 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=27
+#-----------
+time=65528645887
+mem_heap_B=2304
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=65528646149
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
